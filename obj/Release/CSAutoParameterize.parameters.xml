@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BeachInfoEntities-Web.config Connection String" description="BeachInfoEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.BeachInfo.csdl|res://*/Models.BeachInfo.ssdl|res://*/Models.BeachInfo.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=safebeachserver.database.windows.net;initial catalog=BeachInfo;persist security info=True;user id=eccentricanalyst;password=Ea123123123;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\wayneho\\documents\\visual\ studio\ 2015\\Projects\\SafeBeachV3\.2\\SafeBeachV3\.2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BeachInfoEntities']/@connectionString" />
+  </parameter>
+</parameters>

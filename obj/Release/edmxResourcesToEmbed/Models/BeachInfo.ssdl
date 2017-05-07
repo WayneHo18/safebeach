@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeachInfoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BeachInfoV3_1">
+    <Key>
+      <PropertyRef Name="beachID" />
+    </Key>
+    <Property Name="beachID" Type="float" Nullable="false" />
+    <Property Name="beachName" Type="nvarchar" MaxLength="255" />
+    <Property Name="beachAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="region" Type="nvarchar" MaxLength="255" />
+    <Property Name="beachSuburb" Type="nvarchar" MaxLength="255" />
+    <Property Name="postcode" Type="float" />
+    <Property Name="latitude" Type="nvarchar" MaxLength="255" />
+    <Property Name="longitude" Type="nvarchar" MaxLength="255" />
+    <Property Name="patrol" Type="nvarchar" MaxLength="255" />
+    <Property Name="patrolTime" Type="nvarchar" MaxLength="255" />
+    <Property Name="surfLevel" Type="nvarchar" MaxLength="255" />
+    <Property Name="swimLevel" Type="nvarchar" MaxLength="255" />
+    <Property Name="drowning" Type="nvarchar" MaxLength="255" />
+    <Property Name="waterQuality" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="BeachInfoModelStoreContainer">
+    <EntitySet Name="BeachInfoV3_1" EntityType="Self.BeachInfoV3_1" Schema="dbo" Table="BeachInfoV3.1" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

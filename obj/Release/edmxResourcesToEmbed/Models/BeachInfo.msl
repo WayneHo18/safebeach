@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BeachInfoModelStoreContainer" CdmEntityContainer="BeachInfoEntities">
+    <EntitySetMapping Name="BeachInfoV3_1">
+      <EntityTypeMapping TypeName="BeachInfoModel.BeachInfoV3_1">
+        <MappingFragment StoreEntitySet="BeachInfoV3_1">
+          <ScalarProperty Name="beachID" ColumnName="beachID" />
+          <ScalarProperty Name="beachName" ColumnName="beachName" />
+          <ScalarProperty Name="beachAddress" ColumnName="beachAddress" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="beachSuburb" ColumnName="beachSuburb" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="patrol" ColumnName="patrol" />
+          <ScalarProperty Name="patrolTime" ColumnName="patrolTime" />
+          <ScalarProperty Name="surfLevel" ColumnName="surfLevel" />
+          <ScalarProperty Name="swimLevel" ColumnName="swimLevel" />
+          <ScalarProperty Name="drowning" ColumnName="drowning" />
+          <ScalarProperty Name="waterQuality" ColumnName="waterQuality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

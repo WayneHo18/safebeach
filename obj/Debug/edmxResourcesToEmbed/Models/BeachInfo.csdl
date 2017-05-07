@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeachInfoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BeachInfoV3_1">
+    <Key>
+      <PropertyRef Name="beachID" />
+    </Key>
+    <Property Name="beachID" Type="Double" Nullable="false" />
+    <Property Name="beachName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="beachAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="region" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="beachSuburb" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="postcode" Type="Double" />
+    <Property Name="latitude" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="longitude" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="patrol" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="patrolTime" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="surfLevel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="swimLevel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="drowning" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="waterQuality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="BeachInfoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BeachInfoV3_1" EntityType="Self.BeachInfoV3_1" />
+  </EntityContainer>
+</Schema>
