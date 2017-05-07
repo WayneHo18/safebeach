@@ -1,0 +1,146 @@
+﻿<!--
+   PROGRAM:   Safe Beach Tips Page
+   AUTHOR:    Wenzhi He
+   LOGON ID:  No Authentication
+   DUE DATE:  07-May-2017
+
+   FUNCTION:  Establishing the tips page of Safe Beach website.
+              1. Telling users some safety knowledge.
+              2. Rip current, first aid and flags and signs information.
+
+   INPUT:     None
+
+   OUTPUT:    None
+
+   NOTES:     this page is using layout html which include a navigation bar and footer.
+-->
+
+<!--
+    The title of the page
+-->
+@{
+    ViewBag.Title = "Tips";
+}
+
+<h1 class="text-center" style="font-size:50px; font-family:Great Vibes;">@ViewBag.Title - Safety knowledge</h1>
+
+<!--
+    Function: This is the content of tips page.
+
+    Input: see above
+
+    Output: see above
+
+    Notes: 1. The font family of header is Great Vibes while the other's is Open Sans.
+           2. I use some youtube videos to display the information.
+-->
+<div class="container-fluid">
+    <div class="row" style="font-family:Open Sans;">
+        <!--
+            Display the navigation bar to users.
+        -->
+        <nav class="col-sm-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#section1">Rip Current</a></li>
+                <li><a href="#section2">First Aid</a></li>
+                <li><a href="#section3">Flags and Signs</a></li>
+            </ul>
+        </nav>
+        <!--
+            Display the safety knowledge to users in three sections.
+        -->
+        <div class="col-sm-9">
+            <div id="section1">
+                <h1>Rip Current</h1>
+                <p style="font-size:18px;">
+                    A rip current, often referred to simply as a rip, or by the misnomer rip tide, is a specific kind of water current which can occur near beaches with breaking waves. A rip is a strong, localized, and narrow current of water which moves directly away from the shore, cutting through the lines of breaking waves like a river running out to sea, and is strongest near the surface of the water.<br/><br />
+                    Rip currents can be hazardous to people in the water. Swimmers who are caught in a rip and who do not understand what is going on, and who may not have the necessary water skills, may panic, or exhaust themselves by trying to swim directly against the flow of water. Because of these factors, rips are the leading cause of rescues by lifeguards at beaches, and in the US rips are the cause of an average of 46 deaths by drowning per year.<br/><br />
+                    A rip current is not the same thing as undertow, although some people use the latter term incorrectly when they mean a rip current. Contrary to popular belief, neither rip nor undertow can pull a person down and hold them under the water. A rip simply carries floating objects, including people, out beyond the zone of the breaking waves.<br/><br />
+                    <b>AVOIDING RIP CURRENTS</b><br/><br/>
+                    1. Always swim between the red and yellow flags;<br /><br />
+                    2. Observe all safety signs;<br /><br />
+                    3. Obey all instructions from the surf lifesavers and lifeguards;<br /><br />
+                    4. Understand what a rip current is;<br /><br />
+                    5. Know how to spot rip currents and look for the common signs such as deeper, darker water and fewer breaking waves; <br /><br />
+                    6. Do not swim in or near a rip current.<br /><br />
+                </p>
+                <!--
+                    This style is used to make the youtube video responsive.
+                -->
+                <style type="text/css">
+                    .video-container {
+	                    position:relative;
+	                    padding-bottom:56.25%;
+	                    padding-top:30px;
+	                    height:0;
+	                    overflow:hidden;
+                    }
+
+                    .video-container iframe, .video-container object, .video-container embed {
+	                    position:absolute;
+	                    top:0;
+	                    left:0;
+	                    width:100%;
+	                    height:100%;
+                    }
+                </style>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ie3v8G5Z5Qc" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="section2">
+                <br /><br />
+                <h1>First Aid</h1>
+                <p style="font-size:18px;">
+                    <b>Learn the first aid method of DRSABCD</b><br/>
+                    First aid is as easy as ABC – airway, breathing and CPR (cardiopulmonary resuscitation). In any situation, apply the DRSABCD Action Plan.<br/><br />
+                    DRSABCD stands for:<br/>
+                    1. Danger – always check the danger to you, any bystanders and then the injured or ill person. Make sure you do not put yourself in danger when going to the assistance of another person.<br /><br />
+                    2. Response – is the person conscious? Do they respond when you talk to them, touch their hands or squeeze their shoulder?<br /><br />
+                    3. Send for help – call triple zero (000). Don’t forget to answer the questions asked by the operator.<br /><br />
+                    4. Airway – Is the person’s airway clear? Is the person breathing?<br /><br />
+                    If the person is responding, they are conscious and their airway is clear, assess how you can help them with any injury.<br /><br />
+                    If the person is not responding and they are unconscious, you need to check their airway by opening their mouth and having a look inside. If their mouth is clear, tilt their head gently back (by lifting their chin) and check for breathing. If the mouth is not clear, place the person on their side, open their mouth and clear the contents, then tilt the head back and check for breathing.<br /><br />
+                    5. Breathing – check for breathing by looking for chest movements (up and down). Listen by putting your ear near to their mouth and nose. Feel for breathing by putting your hand on the lower part of their chest. If the person is unconscious but breathing, turn them onto their side, carefully ensuring that you keep their head, neck and spine in alignment. Monitor their breathing until you hand over to the ambulance officers.<br /><br />
+                    6. CPR (cardiopulmonary resuscitation) – if an adult is unconscious and not breathing, make sure they are flat on their back and then place the heel of one hand in the centre of their chest and your other hand on top. Press down firmly and smoothly (compressing to one third of their chest depth) 30 times. Give two breaths. To get the breath in, tilt their head back gently by lifting their chin. Pinch their nostrils closed, place your open mouth firmly over their open mouth and blow firmly into their mouth. Keep going with the 30 compressions and two breaths at the speed of approximately five repeats in two minutes until you hand over to the ambulance officers or another trained person, or until the person you are resuscitating responds. The method for CPR for children under eight and babies is very similar and you can learn these skills in a CPR course.<br /><br />
+                    7. Defibrillator – for unconscious adults who are not breathing, apply an automated external defibrillator (AED) if one is available. They are available in many public places, clubs and organisations. An AED is a machine that delivers an electrical shock to cancel any irregular heart beat (arrhythmia), in an effort get the normal heart beating to re-establish itself. The devices are very simple to operate. Just follow the instructions and pictures on the machine, and on the package of the pads, as well as the voice prompts. If the person responds to defibrillation, turn them onto their side and tilt their head to maintain their airway. Some AEDs may not be suitable for children.<br /><br />
+                </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iTgkGflUTk0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="section3">
+                <br /><br/>
+                <h1>Flags and Signs</h1>
+                <p style="font-size:18px;">
+                    <b>Patrolled beach flags</b><br/>
+                    1. Swimming area boundary flag<br/>
+                    <img src="~/Content/img/flag1.gif" class="img-responsive img-rounded center-block grayscale" alt=""><br/>
+                    Meaning: Recommended swimming area with lifeguard supervision<br/><br/>
+                    The area is protected by lifeguards. These flags may be used in pairs spaced apart to indicate a designated area or zone along a beach or waterfront that is most closely supervised or patrolled by qualified lifeguards, and where swimming and/or body surfing is permitted. These flags may be used singly to indicate that swimming is permitted in front of the area where the flag is flown and that the area is under the supervision of a qualified person.<br/><br/>
+                    2. Board riding area boundary flag<br/>
+                    <img src="~/Content/img/flag2.gif" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    Meaning: Watercraft area<br /><br />
+                    These flags may be used in pairs spaced apart to indicate a designated area or zone along a beach or waterfront that is used by those with surfboards and other non-powered watercraft.<br /><br />
+                    3. No swimming flag<br/>
+                    <img src="~/Content/img/flag3.gif" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    Meaning: High Hazard<br/><br/>
+                    Rough conditions such as strong surf and/or currents are present. All swimmers are discouraged from entering the water. Those entering the water should take great care.<br/><br/>
+                    4. Shark alarm flag
+                    <img src="~/Content/img/flag4.gif" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    The Bondi Surf Club site explains that a flag quartered red and white indicates a shark alarm. Jonathan Dixon, 21 Mar 2005<br /><br />
+                    <b>Warning Sign</b><br />
+                    You can also find other beach warning signals with different messages for specific beaches and coastal areas:<br/>
+                    <img src="~/Content/img/sign1.png" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    <img src="~/Content/img/sign2.png" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    <img src="~/Content/img/sign3.png" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    <img src="~/Content/img/sign4.png" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                    <img src="~/Content/img/sign5.png" class="img-responsive img-rounded center-block grayscale" alt=""><br />
+                </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AKGIoeNoLMI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
