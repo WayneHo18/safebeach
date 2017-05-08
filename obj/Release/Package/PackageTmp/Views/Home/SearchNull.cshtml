@@ -1,0 +1,119 @@
+﻿<!--
+   PROGRAM:   Safe Beach Null Search Result Page
+   AUTHOR:    Wenzhi He
+   LOGON ID:  No Authentication
+   DUE DATE:  07-May-2017
+
+   FUNCTION:  Establishing the null search result page of Safe Beach website.
+              1. Telling users the search result is empty according to their input.
+              2. Listing some recommended beaches at the buttom
+
+   INPUT:     choice of a certain beach
+
+   OUTPUT:    the detail page of a certain beach
+
+   NOTES:     this page is using layout html which include a navigation bar and footer.
+-->
+
+<!--
+    The title of the page
+-->
+@{
+    ViewBag.Title = "Search Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--
+    Display the null search result to users.
+-->
+<h1 class="text-center" style="font-size:50px; font-family:Great Vibes;">Search Result</h1>
+<h3 class="text-center" style="font-size:18px; font-family:Open Sans;">Sorry, this search result does not yield any beaches.</h3>
+<h4 class="text-center" style="font-size:18px; font-family:Open Sans;">However, here are some beaches around Melbourne that you can choose from.</h4>
+<br/><br/>
+
+<!--
+    Display some recommended beaches to users.
+-->
+<div class="row">
+    <div class="col-md-4">
+        <div class="alert alert-info text-center" style="font-size:16px; font-family:Open Sans;" role="alert">Recommended for swimming</div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "27" })">
+                <img src="~/Content/img/27.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Black Rock</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "92" })">
+                <img src="~/Content/img/92.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Frankston Beach</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "62" })">
+                <img src="~/Content/img/62.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Altona Beach</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-info text-center" style="font-size:16px; font-family:Open Sans;" role="alert">Recommended for surfing</div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "3" })">
+                <img src="~/Content/img/3.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Torquay Beach</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "9" })">
+                <img src="~/Content/img/9.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Bells Beach</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "13" })">
+                <img src="~/Content/img/13.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Addiscot Beach</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-info text-center" style="font-size:16px; font-family:Open Sans;" role="alert">Recommended for sightseeing</div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "69" })">
+                <img src="~/Content/img/69.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">St Kilda Beach</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "72" })">
+                <img src="~/Content/img/72.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Brighton Beach</p>
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Home", new { id = "63" })">
+                <img src="~/Content/img/63.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p style="font-family:Open Sans;">Williamstown Beach</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
